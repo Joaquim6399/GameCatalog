@@ -1,0 +1,36 @@
+@using GameCatalog.Models
+@model Game;
+
+
+@{
+    ViewData["Title"] = "AddGame";
+}
+
+<h1>AddGame</h1>
+
+<form method="post">
+   <input hidden asp-for="ID"/> 
+    
+    <label asp-for="Title"></label>
+    <input asp-for="Title"/><br/>
+
+    <label asp-for="Publisher"></label>
+    <input asp-for="Publisher"/><br/>
+
+    <label asp-for="ReleaseDate"></label>
+    <input asp-for="ReleaseDate"/><br/>
+
+    <label asp-for="ImageIconUrl"></label>
+    <input asp-for="ImageIconUrl"/><br/>
+
+    <label asp-for="CriticScore"></label>
+    <input asp-for="CriticScore"/><br/>
+
+    <label asp-for="PersonalScore"></label>
+    <input asp-for="PersonalScore"/><br/>
+
+    <label asp-for="PersonalNotes"></label>
+    <input asp-for="PersonalNotes"/><br/>
+
+    <input type="submit" value="submit"/>
+</form>
